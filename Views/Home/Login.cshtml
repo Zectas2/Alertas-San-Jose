@@ -1,0 +1,67 @@
+@{
+    ViewBag.Title = "Login";
+}
+
+<div class="text-center">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+
+        .login-container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+        margin-bottom: 40px; 
+        }
+
+        .form-control {
+            border: 1px solid #cebbf0; 
+            background-color: #cebbf0; 
+            border-radius: 4px; 
+            width: 100%; 
+            padding: 10px; 
+            box-sizing: border-box; 
+        }
+
+        .btn-primary {
+            background-color: #7b5fa1;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 15px 0;
+            font-size: 1rem;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%; 
+        }
+
+        .btn-primary:hover {
+            background-color: #6a4c8b;
+            color: white;
+        }
+    </style>
+
+    <div class="login-container">
+        <form method="post" action="/Home/Principal">
+            <div class="form-group">
+                <label for="username">Usuario</label>
+                <input type="text" class="form-control" id="username" name="username" required />
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" class="form-control" id="password" name="password" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</div>

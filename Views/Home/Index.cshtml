@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alertas San José</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f8f8f8;
+            }
+
+            .container {
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 100px;
+            }
+
+            button {
+                background-color: #7b5fa1;
+                color: white;
+                border: none;
+                border-radius: 25px;
+                padding: 15px 40px;
+                font-size: 1rem;
+                margin: 10px 0;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                 width: 80%;
+            }
+
+            .btn {
+                background-color: #7b5fa1;
+                color: white;
+                border: none;
+                border-radius: 25px;
+                padding: 15px 40px;
+                font-size: 1rem;
+                margin: 10px 0;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                width: 80%;
+            }
+
+            button:hover {
+                background-color: #6a4c8b;
+            }
+
+            .btn:hover {
+                background-color: #6a4c8b;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Alertas San José</h1>
+            @Html.ActionLink("Iniciar sesión", "Login", "Home",null, new { @class = "btn" })
+            <br>
+            <button>Crear cuenta</button>
+        </div>
+    </body>
+</div>
